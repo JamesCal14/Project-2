@@ -27,7 +27,7 @@ public class Helper {
 			{
 				for (int j = 0;j<=i+windowValue && j<saltedValues.size();j++)
 				{
-					result = result + saltedValues.get(i);
+					result = result + saltedValues.get(j);
 					count++;
 				}
 			}
@@ -35,7 +35,7 @@ public class Helper {
 			{
 				for (int j = i-windowValue;j<=i+windowValue && j<saltedValues.size();j++)
 				{
-					result = result + saltedValues.get(i);
+					result = result + saltedValues.get(j);
 					count++;
 				}
 			}
